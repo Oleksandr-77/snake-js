@@ -1,27 +1,25 @@
-/* * {
-  box-sizing: border-box;
-  padding: 0;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
   margin: 0;
-} */
-
-#game-container {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  border: 2px solid #000;
 }
 
-#snake,
-#food {
+canvas {
+  background-color: #000;
+}
+
+#score,
+#gameCount {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: rgb(16, 204, 100);
 }
 
-#snake {
-  background-color: green;
-}
-
-#food {
-  background-color: red;
+#gameCount {
+  top: 40px;
 }
